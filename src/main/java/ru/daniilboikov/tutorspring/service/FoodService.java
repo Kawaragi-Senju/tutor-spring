@@ -9,9 +9,9 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.stereotype.Service;
 import ru.daniilboikov.tutorspring.dto.FoodDTO;
 import ru.daniilboikov.tutorspring.dto.FoodUpdateDTO;
+import ru.daniilboikov.tutorspring.entity.Food;
 import ru.daniilboikov.tutorspring.mapper.FoodMapper;
 import ru.daniilboikov.tutorspring.repository.FoodRepository;
-import ru.daniilboikov.tutorspring.entity.Food;
 
 @Service
 @RequiredArgsConstructor

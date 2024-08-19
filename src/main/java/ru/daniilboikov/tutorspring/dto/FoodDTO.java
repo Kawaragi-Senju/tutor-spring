@@ -1,8 +1,6 @@
 package ru.daniilboikov.tutorspring.dto;
 
 import lombok.Data;
-
-import javax.naming.directory.InvalidAttributeValueException;
 import java.sql.Date;
 
 @Data
