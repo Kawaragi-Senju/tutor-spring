@@ -6,7 +6,7 @@ import lombok.Data;
 import java.sql.Date;
 
 @Entity
-@Table(name = "food", schema = "public")
+@Table(name = "food", schema = "assortment")
 @Data
 public class Food {
 
