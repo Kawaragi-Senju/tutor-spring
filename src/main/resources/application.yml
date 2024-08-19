@@ -3,14 +3,14 @@ spring:
     name: tutor-spring
   datasource:
     username: postgres
-    password: admin
+    password: postgres
     url: jdbc:postgresql://localhost:5432/postgres
   jpa:
     show-sql: true
   flyway:
     url: jdbc:postgresql://localhost:5432/postgres
     user: postgres
-    password: admin
+    password: postgres
     locations:
-      filesystem:db.migration
+      classpath:db/migration
     baselineOnMigrate: true
