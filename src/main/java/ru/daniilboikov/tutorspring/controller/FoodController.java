@@ -30,16 +30,19 @@ public class FoodController {
     }
 
     @GetMapping("/get-all")
+    @Operation(summary = "Отдает всю еду по айди")
     public PagedModel<FoodDTO> getAll(@PageableDefault(sort = "id", direction = Sort.Direction.ASC) Pageable pageable){
         return foodService.getAll(pageable);
     }
 
     @DeleteMapping("/delete-by-id/{id}")
+    @Operation(summary = "Удаляет еду по айди")
     public void deleteById(@PathVariable("id")Integer id){
         foodService.deleteById(id);
     }
 
     @PutMapping("/put-by-id/{id}")
+    @Operation(summary = "Обновляет еду по айди")
     public FoodDTO updateById(@PathVariable("id")Integer id, @RequestBody FoodUpdateDTO foodUpdateDTO){
         return foodService.updateById(foodUpdateDTO, id);
     }
